@@ -159,6 +159,7 @@ const Word = ({ word, results }: { word: string; results: Results }) => {
             )}
             {lines}
             <Circle pos={center(positions[0])} r={5} fill="white" />
+            <Circle pos={center(positions[positions.length - 1])} r={3} fill="white" />
             {overs}
         </svg>
     );
